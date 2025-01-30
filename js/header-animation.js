@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function generateData() {
     return Array.from({length: 50}, (_, i) => ({
       x: i * (width / 49),
-      y: height/2 + Math.sin(i/5) * 50 + Math.random() * 20
+      y: height/2 + Math.cos(i/5) * 50 + Math.random() * 20
     }));
   }
   

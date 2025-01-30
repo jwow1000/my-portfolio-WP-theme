@@ -732,6 +732,7 @@ textarea {
 .posts-navigation .nav-links,
 .post-navigation .nav-links {
 	display: flex;
+  padding: 1rem;
 }
 
 .comment-navigation .nav-previous,
@@ -806,6 +807,7 @@ textarea {
 
 /* logo image. */
 .custom-logo-link {
+  background: none;
   position: absolute;
   left: 50%;
   top: 0;
@@ -998,6 +1000,12 @@ textarea {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  padding: 0 1rem 4rem 1rem;
+  
+}
+.entry-content > p {
+  padding: 1rem;
+  max-width: 55ch;
 }
 .site-branding {
   height: 4rem;
