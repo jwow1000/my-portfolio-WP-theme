@@ -18,7 +18,12 @@ get_header();
 	<main id="primary" class="site-main">
 
     <p id="home-explain">Jeremy Wiles-Young is an artist and software engineer working with installation and sound. They are currently based in NYC.</p>
-
+    
+    <a class="github-link preview-title" href="https://github.com/jwow1000">
+      github profile ↗
+      <img class="github-image"
+      src="http://jwy-art.local/wp-content/uploads/2025/01/github.png" alt="the github.com logo">
+    </a>
     <?php
     $args = array(
         'post_type'      => 'post',   // Change to custom post type if needed
