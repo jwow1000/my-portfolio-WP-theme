@@ -22,7 +22,7 @@ get_header();
     <a class="github-link preview-title" href="https://github.com/jwow1000">
       github profile ↗
       <img class="github-image"
-      src="http://jwy-art.local/wp-content/uploads/2025/01/github.png" alt="the github.com logo">
+      src="https://www.jeremywy.com/wp-content/uploads/2025/01/github.png" alt="the github.com logo">
     </a>
     <?php
     $args = array(
