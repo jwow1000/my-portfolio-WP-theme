@@ -28,7 +28,7 @@ if ($category) {
         'posts_per_page' => 10, 
         'meta_key'       => 'date',
         'orderby'        => 'meta_value',
-        'order'          => 'ASC', // Change to DESC for latest first
+        'order'          => 'DESC', // DESC latest first
         'meta_type'      => 'DATE' // Ensures proper date sorting
     );
 
