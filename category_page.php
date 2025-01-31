@@ -25,7 +25,11 @@ $category = get_category_by_slug($category_slug);
 if ($category) {
     $args = array(
         'category_name' => $category->slug,
-        'posts_per_page' => 10, // Adjust as needed
+        'posts_per_page' => 10, 
+        'meta_key'       => 'date',
+        'orderby'        => 'meta_value',
+        'order'          => 'ASC', // Change to DESC for latest first
+        'meta_type'      => 'DATE' // Ensures proper date sorting
     );
 
     $query = new WP_Query($args);
