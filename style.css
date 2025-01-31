@@ -1098,6 +1098,7 @@ textarea {
 .cv-list-wrapper > li {
   text-align: left;
   list-style: none;
+  line-height: 1.3rem;
 
 }
 
