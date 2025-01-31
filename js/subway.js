@@ -18,7 +18,7 @@ if( wrapper) {
       "xGTYk31Py3g",
     ];
   
-    const wrapper = document.getElementById("subway-container");
+   
   
     links.forEach((videoId, index) => {
       // Create a container for each video
