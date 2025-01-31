@@ -1088,6 +1088,13 @@ textarea {
   padding: 0.3rem;
   border: 1px solid black;  
 }
+.cv-date {
+  background-color: white;
+  color: black;
+  border-radius: 0;
+  padding: 0.3rem;
+  border: 1px solid black;   
+}
 /* Accessibility
 --------------------------------------------- */
 
