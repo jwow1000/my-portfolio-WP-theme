@@ -1109,6 +1109,7 @@ textarea {
   list-style: none;
   line-height: 1.9rem;
   margin: 0;
+  padding: 0;
 
 }
 .list-line {
@@ -1116,6 +1117,7 @@ textarea {
   height: 5px;
   background: url("https://www.jeremywy.com/wp-content/uploads/2025/01/water.png");
   background-size: cover;
+  margin: 1rem;
 }
 .wp-block-heading {
   width: 100%;
