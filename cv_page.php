@@ -2,7 +2,7 @@
 /* Template Name: CV Page */
 get_header(); ?>
 
-<main class="cv-page">
+<main class="cv-page-wrapper">
     <h2 class="wp-block-heading">Exhibitions</h2>
     <div class="list-line"></div>
     <ul class="cv-list-wrapper">

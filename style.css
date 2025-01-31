@@ -1128,6 +1128,10 @@ textarea {
   text-align: left;
 
 }
+.cv-page-wrapper {
+  width: 100vw;
+  padding: 2rem;
+}
 /* Accessibility
 --------------------------------------------- */
 
