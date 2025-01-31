@@ -1097,6 +1097,7 @@ textarea {
 }
 .cv-list-wrapper > li {
   text-align: left;
+  list-style: outside;
 
 }
 
