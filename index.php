@@ -21,8 +21,9 @@ get_header();
     
     <a class="github-link preview-title" href="https://github.com/jwow1000">
       github profile ↗
-      <img class="github-image"
-      src="https://www.jeremywy.com/wp-content/uploads/2025/01/github.png" alt="the github.com logo">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/github.png" alt="GitHub Logo">
+
+     
     </a>
     <?php
     $args = array(
