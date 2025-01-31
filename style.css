@@ -1095,6 +1095,11 @@ textarea {
   padding: 0.3rem;
   border: 1px solid black;   
 }
+.cv-list-wrapper {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
 .cv-list-wrapper > li {
   text-align: left;
   list-style: none;
