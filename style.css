@@ -1078,6 +1078,13 @@ textarea {
 .github-image {
   margin: 1rem;
 }
+.wp-block-button__link {
+  background-color: white;
+  color: black;
+  border-radius: 0;
+  padding: 0.3rem;
+  border: 1px solid black;  
+}
 /* Accessibility
 --------------------------------------------- */
 
