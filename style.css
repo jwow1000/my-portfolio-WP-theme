@@ -1098,7 +1098,6 @@ textarea {
 .cv-list-wrapper {
   margin: 0;
   font-size: 0.9rem;
-  margin: 0;
   padding: 0;
 }
 .cv-list-name {
@@ -1110,8 +1109,7 @@ textarea {
   text-align: left;
   list-style: none;
   line-height: 1.9rem;
-  margin: 0;
-  padding: 0;
+  
 
 }
 .list-line {
