@@ -939,7 +939,8 @@ textarea {
 .page_item > a, .menu-item > a {
   color: black;
   text-align: left;
-  font-style: italic; 
+  font-style: italic;
+  font-weight: 700; 
   background-color: white;
   border: 1px black solid; 
   padding: 0.3rem;
