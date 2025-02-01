@@ -19,6 +19,9 @@ $category_map = array(
 // Use the mapped category slug if it exists, otherwise use the page slug
 $category_slug = $category_map[$page_slug];
 
+// Display the slug as a title
+echo '<h1 class="page-title">' . ucfirst(str_replace('-', ' ', $page_slug)) . '</h1>';
+
 // Get the category object
 $category = get_category_by_slug($category_slug);
 
