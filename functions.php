@@ -48,7 +48,7 @@ function custom_portfolio_setup() {
       ),
       'public'      => true,
       'has_archive' => false,
-      'supports'    => array('title', 'editor', 'custom-fields'),
+      'supports'    => array('title', 'editor'),
       'menu_icon'   => 'dashicons-portfolio',
     );
     register_post_type('cv_entry', $args);
