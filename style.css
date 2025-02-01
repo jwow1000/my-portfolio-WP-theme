@@ -1142,6 +1142,9 @@ textarea {
   display: block;
   margin-left: 2rem;
   color: black;
+  background-color: white;
+  border: 1px solid black;
+  padding: 0.3rem;
 }
 /* @media (min-width: 600px) and (max-width: 1199px) {
   .category-page-title {
