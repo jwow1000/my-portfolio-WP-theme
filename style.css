@@ -1140,7 +1140,7 @@ textarea {
   text-align: left;
   font-style: italic;
   font-size: 1rem;
-  display: block;
+  display: inline;
   margin-left: 2rem;
   color: black;
   background-color: white;
