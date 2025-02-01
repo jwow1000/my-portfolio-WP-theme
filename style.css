@@ -804,10 +804,6 @@ textarea {
 	margin-top: 0;
 	padding: 0;
 }
-.custom-logo {
-  border: 1px solid black;
-
-}
 
 /* logo image. */
 .custom-logo-link {
@@ -1135,6 +1131,9 @@ textarea {
 .cv-page-wrapper {
   width: 100vw;
   padding: 2rem;
+}
+.custom-logo {
+  border: 1px solid black;
 }
 /* Accessibility
 --------------------------------------------- */
