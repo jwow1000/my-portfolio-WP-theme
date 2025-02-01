@@ -813,6 +813,7 @@ textarea {
   top: 0;
   transform: translateX(-50%);
   width: 5rem;
+  border: 1px solid black;
 }
 
 /* Captions
