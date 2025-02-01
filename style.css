@@ -987,6 +987,7 @@ textarea {
 }
 .preview-title {
   font-size:inherit;
+  font-style: italic;
   font-weight: inherit;
   width: auto;
   padding: 0.4rem;
