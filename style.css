@@ -1134,6 +1134,22 @@ textarea {
   width: 100vw;
   padding: 2rem;
 }
+.category-page-title{
+  text-align: left;
+  display: block;
+  color: black;
+}
+/* @media (min-width: 600px) and (max-width: 1199px) {
+  .category-page-title {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .category-page-title {
+    display: none;
+  }
+} */
 
 /* Accessibility
 --------------------------------------------- */

@@ -20,7 +20,7 @@ $category_map = array(
 $category_slug = $category_map[$page_slug];
 
 // Display the slug as a title
-echo '<h1 class="page-title">' . ucfirst(str_replace('-', ' ', $page_slug)) . '</h1>';
+echo '<h1 class="category-page-title">' . ucfirst(str_replace('-', ' ', $page_slug)) . '</h1>';
 
 // Get the category object
 $category = get_category_by_slug($category_slug);
