@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
     } = options;
 
     const wrapper = d3.select(`#${containerId}`);
-    const currentWidth = width;
+    let currentWidth = width;
 
     // Clear any existing SVG
     wrapper.selectAll("*").remove();
