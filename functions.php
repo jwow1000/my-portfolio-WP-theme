@@ -49,23 +49,29 @@ function custom_portfolio_setup() {
 
   // add the script for header animation
   function enqueue_custom_scripts() {
-      // First enqueue D3
-      wp_enqueue_script('d3-js', 'https://d3js.org/d3.v7.min.js', array(), '7.0.0', true);
-      
-      // Then enqueue your custom script
-      wp_enqueue_script(
-          'header-animation', // Name for the script
-          get_template_directory_uri() . '/js/header-animation.js', // Path to the script
-          array('d3-js'), // Dependencies - this ensures D3 loads first
-          '1.0.0', // Version number
-          true // Load in footer
-      );
-      
-      wp_enqueue_script(
-        'subway-layout', // Name for the script
-        get_template_directory_uri() . '/js/subway.js', // Path to the script
-        '1.0.0', // Version number
-        true // Load in footer
+    // Enqueue Konva
+    wp_enqueue_script(
+      'konva-js',
+      'https://unpkg.com/konva@9/konva.min.js',
+      array(),
+      '9.0.0',
+      true
+    );
+
+    // Then enqueue your custom script
+    wp_enqueue_script(
+      'header-animation',
+      get_template_directory_uri() . '/js/header-animation.js',
+      array('konva-js'), // This ensures Konva loads first
+      '1.0.0',
+      true
+    );
+
+    wp_enqueue_script(
+      'subway-layout', // Name for the script
+      get_template_directory_uri() . '/js/subway.js', // Path to the script
+      '1.0.0', // Version number
+      true // Load in footer
     );
   }
   add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
