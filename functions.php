@@ -52,7 +52,7 @@ function custom_portfolio_setup() {
     // Enqueue Konva
     wp_enqueue_script(
       'konva-js',
-      'https://unpkg.com/konva@9/konva.min.js',
+      'https://cdn.jsdelivr.net/npm/konva@9/konva.min.js',
       array(),
       '9.0.0',
       true
