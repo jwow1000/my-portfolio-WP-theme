@@ -804,6 +804,10 @@ textarea {
 	margin-top: 0;
 	padding: 0;
 }
+.custom-logo {
+  border: 1px solid black;
+
+}
 
 /* logo image. */
 .custom-logo-link {
@@ -813,7 +817,6 @@ textarea {
   top: 0;
   transform: translateX(-50%);
   width: 5rem;
-  border: 1px solid black;
 }
 
 /* Captions
