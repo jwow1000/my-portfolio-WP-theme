@@ -39,6 +39,23 @@ function custom_portfolio_setup() {
 		*/
 	add_theme_support( 'title-tag' );
 
+  // make custom cv posts CPTs
+  function create_cv_entry_cpt() {
+    $args = array(
+      'labels'      => array(
+          'name'          => __('CV Entries'),
+          'singular_name' => __('CV Entry'),
+      ),
+      'public'      => true,
+      'has_archive' => false,
+      'supports'    => array('title', 'editor'),
+      'menu_icon'   => 'dashicons-portfolio',
+    );
+    register_post_type('cv_entry', $args);
+  }
+  add_action('init', 'create_cv_entry_cpt');
+
+
 	/*
 		* Enable support for Post Thumbnails on posts and pages.
 		*
