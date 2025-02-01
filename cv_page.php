@@ -7,7 +7,7 @@ get_header(); ?>
     <?php
     // Fetch all CV posts
     $cv_query = new WP_Query(array(
-        'post_type'      => 'entries',
+        'post_type'      => 'cv_entry',
         'posts_per_page' => -1,
         'orderby'        => 'meta_value',
         'meta_key'       => 'date', // Assuming 'date' is the ACF field for sorting
