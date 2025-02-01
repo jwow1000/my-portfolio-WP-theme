@@ -807,7 +807,8 @@ textarea {
 
 /* logo image. */
 .custom-logo-link {
-  background: none;
+  
+  background: pink;
   position: absolute;
   left: 50%;
   top: 0;
@@ -1132,9 +1133,7 @@ textarea {
   width: 100vw;
   padding: 2rem;
 }
-.custom-logo {
-  border: 1px solid black;
-}
+
 /* Accessibility
 --------------------------------------------- */
 
