@@ -133,9 +133,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
   const wrapp = document.querySelector('#site-branding');
+  const rect = wrapp.getBoundingClientRect();
   createRandomLines('header-animation', {
-    width: wrapp.width,
-    height: wrapp.height,
+    width: rect.width,
+    height: rect.height,
     wAmount: 20,
     hAmount: 20
   });
