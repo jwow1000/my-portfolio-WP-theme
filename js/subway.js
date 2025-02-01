@@ -6,7 +6,7 @@
     let players = [];
     
     // Function to initialize players
-    function onYouTubeIframeAPIReady() {
+    window.onYouTubeIframeAPIReady = function() {
       const links = [
         "spRQR7xBG3g",
         "-4kpwJKwZ8Q",
@@ -64,7 +64,7 @@
   }
   // Make function available globally for WordPress
   window.subwayLayout = subwayLayout;
-})
+})()
 
 document.addEventListener('DOMContentLoaded', function() {
   const wrapper = document.getElementById("subway-container");
