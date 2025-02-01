@@ -142,6 +142,6 @@ document.addEventListener('DOMContentLoaded', function() {
     width: rect.width,
     height: rect.height,
     wAmount: 20,
-    hAmount: 10
+    hAmount: 5
   });
 });
