@@ -1,8 +1,8 @@
-<!-- 
+/*
 <?php
 /* Template Name: CV Page */
 get_header(); ?>
-
+/
 <main class="cv-page-wrapper">
     <h2 class="wp-block-heading">Exhibitions</h2>
     <div class="list-line"></div>
@@ -20,14 +20,7 @@ get_header(); ?>
 </main>
 
 <?php get_footer(); ?>
-
-<?php
-/*
-Template Name: CV Page
 */
-get_header();
-?>
- -->
 
  <?php
 /* Template Name: CV Page */
