@@ -77,8 +77,11 @@ document.addEventListener('DOMContentLoaded', function() {
       reRender = false
     } = options;
 
+    const wrapper = d3.select(`#${containerId}`);
+    const currentWidth = width;
+
     // Clear any existing SVG
-    d3.select(`#${containerId}`).selectAll("*").remove();
+    wrapper.selectAll("*").remove();
 
     // Create new SVG
     const svg = d3.select(`#${containerId}`)
@@ -111,16 +114,17 @@ document.addEventListener('DOMContentLoaded', function() {
       .attr("d", lineGenerator)
       .attr("stroke", color)
       .attr("fill", "none");
-
+    
     // Optional: Add resize handling
     function handleResize() {
-      const newWidth = parseInt(d3.select(`#${containerId}`).style('width'));
+      const newWidth = parseInt(wrapper.style('width'));
       if (Math.abs(newWidth - width) > 50) {
         createRandomLines(containerId, {
           ...options,
           width: newWidth
         });
       }
+      currentWidth = newWidth;
     }
 
     window.addEventListener('resize', handleResize);
