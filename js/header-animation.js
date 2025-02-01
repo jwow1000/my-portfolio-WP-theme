@@ -130,3 +130,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // Make the function available globally for WordPress
   window.createRandomLines = createRandomLines;
 })();
+
+document.addEventListener('DOMContentLoaded', function() {
+  createRandomLines('header-animation', {
+    width: 800,
+    height: 600,
+    wAmount: 10,
+    hAmount: 10
+  });
+});
