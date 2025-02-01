@@ -132,11 +132,11 @@ document.addEventListener('DOMContentLoaded', function() {
 })();
 
 document.addEventListener('DOMContentLoaded', function() {
-  const wrapp = document.getElementById('header-animation');
+  const wrapp = document.querySelector('#site-branding');
   createRandomLines('header-animation', {
     width: wrapp.width,
     height: wrapp.height,
     wAmount: 20,
-    hAmount: 5
+    hAmount: 20
   });
 });
