@@ -132,10 +132,11 @@ document.addEventListener('DOMContentLoaded', function() {
 })();
 
 document.addEventListener('DOMContentLoaded', function() {
+  const wrapp = document.getElementById('header-animation');
   createRandomLines('header-animation', {
-    width: 800,
-    height: 600,
-    wAmount: 10,
-    hAmount: 10
+    width: wrapp.width,
+    height: wrapp.height,
+    wAmount: 20,
+    hAmount: 5
   });
 });
