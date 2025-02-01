@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
 })();
 
 document.addEventListener('DOMContentLoaded', function() {
-  const wrapp = document.querySelector('#site-branding');
+  const wrapp = document.querySelector('.site-branding');
   const rect = wrapp.getBoundingClientRect();
   createRandomLines('header-animation', {
     width: rect.width,
