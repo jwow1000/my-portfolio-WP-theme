@@ -1142,25 +1142,27 @@ textarea {
   font-size: 1rem;
   display: inline;
   position: fixed;
-  top: 50%;
-  left: 2rem;
+  top: 1rem;
+  left: 1rem;
   transform: translateY(-50%);
   color: black;
   background-color: white;
   border: 1px solid black;
   padding: 0.3rem;
 }
-/* @media (min-width: 600px) and (max-width: 1199px) {
+
+@media (min-width: 600px) and (max-width: 1199px) {
   .category-page-title {
-    display: none;
+    top: 50%;
   }
 }
 
 @media (min-width: 1200px) {
   .category-page-title {
-    display: none;
+    top: 50%;
+    left: 2rem;
   }
-} */
+}
 
 /* Accessibility
 --------------------------------------------- */
