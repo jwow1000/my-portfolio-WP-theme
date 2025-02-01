@@ -1137,6 +1137,7 @@ textarea {
 }
 .category-page-title{
   text-align: left;
+  font-size: 0.7rem;
   display: block;
   margin-left: 2rem;
   color: black;
