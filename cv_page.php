@@ -15,6 +15,8 @@ get_header(); ?>
     ));
 
     if ($cv_query->have_posts()) :
+        echo "<script>console.log('query has posts');</script>";
+
         // Create an array to group entries by 'type'
         $cv_sections = [];
 
