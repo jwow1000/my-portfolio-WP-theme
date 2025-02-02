@@ -1139,7 +1139,6 @@ textarea {
   padding: 2rem;
 }
 .category-page-title{
-  width: auto;
   text-align: left;
   font-style: italic;
   font-size: 1rem;
@@ -1158,7 +1157,7 @@ textarea {
   .category-page-title {
     top: 50%;
     left: 1rem;
-    right: 0;
+    right: none;
   }
 }
 
@@ -1166,7 +1165,7 @@ textarea {
   .category-page-title {
     top: 50%;
     left: 2rem;
-    right: 0;
+    right: none;
   }
 }
 
