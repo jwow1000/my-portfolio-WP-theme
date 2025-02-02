@@ -13,6 +13,7 @@ get_header(); ?>
         'meta_key'       => 'date', // Assuming 'date' is the ACF field for sorting
         'order'          => 'DESC',
     ));
+    echo "<script>console.log(" . json_encode($cv_query) . ");</script>";
 
     if ($cv_query->have_posts()) :
 
@@ -32,7 +33,6 @@ get_header(); ?>
             }
         endwhile;
         wp_reset_postdata();
-        echo "<script>console.log(" . json_encode($cv_sections) . ");</script>";
         
         // Loop through the grouped CV sections
         foreach ($cv_sections as $section_name => $entries) :
