@@ -15,7 +15,6 @@ get_header(); ?>
     ));
 
     if ($cv_query->have_posts()) :
-        echo "<script>console.log('query has posts');</script>";
 
         // Create an array to group entries by 'type'
         $cv_sections = [];
@@ -33,9 +32,10 @@ get_header(); ?>
             }
         endwhile;
         wp_reset_postdata();
-
+        
         // Loop through the grouped CV sections
         foreach ($cv_sections as $section_name => $entries) :
+        echo "<script>console.log(" . json_encode($entries) . ");</script>";
     ?>
 
     <h2 class="wp-block-heading"><?php echo esc_html($section_name); ?></h2>
