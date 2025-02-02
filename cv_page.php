@@ -22,10 +22,7 @@ get_header(); ?>
       
       while ($cv_query->have_posts()) : $cv_query->the_post();
             $type = get_field('type'); // Get ACF 'type' field
-            echo '<pre>';
-            print_r(get_fields(get_the_ID())); // Dumps all ACF fields for debugging
-            echo '</pre>';
-            echo "<script>console.log(" . json_encode($type) . ");</script>";
+            
             if ($type) {
                 $cv_sections[$type][] = [
                     'date'     => get_field('date'),
@@ -49,10 +46,20 @@ get_header(); ?>
         <?php foreach ($entries as $entry) : ?>
             <li>
                 <span class="cv-date"><?php echo esc_html($entry['date']); ?>:</span>
-                <span class="cv-list-name"><?php echo esc_html($entry['title']); ?></span>.
+                <span class="cv-list-name"><?php echo esc_html($entry['title']); ?></span>
                 <span class="cv-list-location"><?php echo esc_html($entry['location']); ?></span>.
-                <span class="cv-list-description"><?php echo esc_html($entry['description']); ?></span>.
-                <span class="cv-list-link"><?php echo esc_html($entry['link']); ?></span>.
+                
+                <?php if ($description) : ?>
+                    <span class="cv-list-description"><?php echo esc_html($entry['description']); ?></span>.
+                <?php endif; ?>
+
+                <?php if ($link) : ?>
+                    <span class="cv-list-link">
+                      <a href="<?php echo esc_url($entry['link']); ?>" target="_blank"> ~link~ </a>
+                    </span>
+                <?php endif; ?>
+
+                
             </li>
         <?php endforeach; ?>
     </ul>
