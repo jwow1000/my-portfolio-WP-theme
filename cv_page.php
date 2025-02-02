@@ -13,15 +13,15 @@ get_header(); ?>
         'meta_key'       => 'date', // Assuming 'date' is the ACF field for sorting
         'order'          => 'DESC',
     ));
-    echo "<script>console.log(" . json_encode($cv_query) . ");</script>";
-
+    
     if ($cv_query->have_posts()) :
-
-        // Create an array to group entries by 'type'
-        $cv_sections = [];
-
-        while ($cv_query->have_posts()) : $cv_query->the_post();
+      
+      // Create an array to group entries by 'type'
+      $cv_sections = [];
+      
+      while ($cv_query->have_posts()) : $cv_query->the_post();
             $type = get_field('type'); // Get ACF 'type' field
+            echo "<script>console.log(" . json_encode($type) . ");</script>";
             if ($type) {
                 $cv_sections[$type][] = [
                     'date'     => get_field('date'),
