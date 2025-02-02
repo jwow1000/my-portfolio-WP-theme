@@ -15,7 +15,10 @@ get_header(); ?>
     ));
     
     if ($cv_query->have_posts()) :
-      
+      echo '<pre>';
+      print_r(get_fields(get_the_ID())); // Dumps all ACF fields for debugging
+      echo '</pre>';
+
       // Create an array to group entries by 'type'
       $cv_sections = [];
       
