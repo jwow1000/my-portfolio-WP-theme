@@ -49,11 +49,11 @@ get_header(); ?>
                 <span class="cv-list-name"><?php echo esc_html($entry['title']); ?></span>
                 <span class="cv-list-location"><?php echo esc_html($entry['location']); ?></span>.
                 
-                <?php if ($description) : ?>
+                <?php if ($entry['description']) : ?>
                     <span class="cv-list-description"><?php echo esc_html($entry['description']); ?></span>.
                 <?php endif; ?>
 
-                <?php if ($link) : ?>
+                <?php if ($entry['link']) : ?>
                     <span class="cv-list-link">
                       <a href="<?php echo esc_url($entry['link']); ?>" target="_blank"> ~link~ </a>
                     </span>
