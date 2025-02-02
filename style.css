@@ -1146,7 +1146,6 @@ textarea {
   position: fixed;
   top: 3rem;
   right: 1rem;
-  transform: translateY(-50%);
   color: black;
   background-color: white;
   border: 1px solid black;
@@ -1157,7 +1156,8 @@ textarea {
   .category-page-title {
     top: 50%;
     left: 1rem;
-    right: none;
+    right: auto;
+    transform: translateY(-50%);
   }
 }
 
@@ -1165,7 +1165,8 @@ textarea {
   .category-page-title {
     top: 50%;
     left: 2rem;
-    right: none;
+    right: auto;
+    transform: translateY(-50%);
   }
 }
 
