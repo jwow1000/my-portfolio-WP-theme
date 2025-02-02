@@ -15,15 +15,16 @@ get_header(); ?>
     ));
     
     if ($cv_query->have_posts()) :
-      echo '<pre>';
-      print_r(get_fields(get_the_ID())); // Dumps all ACF fields for debugging
-      echo '</pre>';
+     
 
       // Create an array to group entries by 'type'
       $cv_sections = [];
       
       while ($cv_query->have_posts()) : $cv_query->the_post();
             $type = get_field('type'); // Get ACF 'type' field
+            echo '<pre>';
+            print_r(get_fields(get_the_ID())); // Dumps all ACF fields for debugging
+            echo '</pre>';
             echo "<script>console.log(" . json_encode($type) . ");</script>";
             if ($type) {
                 $cv_sections[$type][] = [
