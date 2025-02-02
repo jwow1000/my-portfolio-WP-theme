@@ -25,6 +25,8 @@ get_header(); ?>
                     'date'     => get_field('date'),
                     'title'    => get_the_title(),
                     'location' => get_field('location'),
+                    'description' => get_field('description'),
+                    'link' => get_field('link'),
                 ];
             }
         endwhile;
@@ -42,7 +44,9 @@ get_header(); ?>
             <li>
                 <span class="cv-date"><?php echo esc_html($entry['date']); ?>:</span>
                 <span class="cv-list-name"><?php echo esc_html($entry['title']); ?></span>.
-                <?php echo esc_html($entry['location']); ?>
+                <span class="cv-list-location"><?php echo esc_html($entry['location']); ?></span>.
+                <span class="cv-list-description"><?php echo esc_html($entry['description']); ?></span>.
+                <span class="cv-list-link"><?php echo esc_html($entry['link']); ?></span>.
             </li>
         <?php endforeach; ?>
     </ul>
