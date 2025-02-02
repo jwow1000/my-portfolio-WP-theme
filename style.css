@@ -809,7 +809,7 @@ textarea {
 .custom-logo-link {
   background: none;
   position: absolute;
-  right: 2rem;
+  left: 2rem;
   top: 50%;
   transform: translateY(-50%);
   width: 5rem;
@@ -817,17 +817,7 @@ textarea {
 .custom-logo {
   border: 1px solid black;
 }
-@media (min-width: 600px) and (max-width: 1199px) {
-  .custom-logo-link {
-    left: 2rem;
-  }
-}
 
-@media (min-width: 1200px) {
-  .custom-logo-link {
-    left: 2rem;
-  } 
-}
 /* Captions
 --------------------------------------------- */
 .wp-caption {
@@ -1155,8 +1145,8 @@ textarea {
   font-size: 1rem;
   display: inline;
   position: fixed;
-  top: 1rem;
-  left: 1rem;
+  top: 3rem;
+  right: 1rem;
   transform: translateY(-50%);
   color: black;
   background-color: white;
@@ -1167,6 +1157,7 @@ textarea {
 @media (min-width: 600px) and (max-width: 1199px) {
   .category-page-title {
     top: 50%;
+    left: 1rem;
   }
 }
 
