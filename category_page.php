@@ -48,7 +48,7 @@ if ($category) {
                 
                 <?php 
                 if (has_post_thumbnail()) {
-                    the_post_thumbnail('medium'); // You can specify size: thumbnail, medium, large, full
+                    the_post_thumbnail('large'); // You can specify size: thumbnail, medium, large, full
                 } 
                 ?>
                 <div class="preview-excerpt"><?php the_excerpt(); ?></div>
