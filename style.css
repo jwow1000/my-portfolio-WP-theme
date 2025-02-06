@@ -977,6 +977,7 @@ textarea {
   display: block;
   margin: 4rem auto;
 }
+
 .preview-wrapper-link {
   width: 100%;
   display: flex; 
@@ -1001,6 +1002,17 @@ textarea {
   border: solid 1px black;
   padding: 0.4rem;
 }
+@media (min-width: 600px) and (max-width: 1199px) {
+  .preview-wrapper {
+    width: 50vw;
+  } 
+}
+@media (min-width: 1200px) {
+  .preview-wrapper {
+    width: 50vw;
+  }
+}
+
 .wp-post-image {
   margin: 0 auto;
 }
