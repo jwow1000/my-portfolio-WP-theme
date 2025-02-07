@@ -62,7 +62,11 @@ function custom_portfolio_setup() {
 		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		*/
 	add_theme_support( 'post-thumbnails' );
-  
+  // set up cors
+  header("Access-Control-Allow-Origin: *");
+  header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+  header("Access-Control-Allow-Headers: Content-Type, Authorization");
+ 
 
   // add the script for header animation
   function enqueue_custom_scripts() {
