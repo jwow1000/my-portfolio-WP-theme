@@ -38,7 +38,7 @@ function custom_portfolio_setup() {
 		* provide it for us.
 		*/
 	add_theme_support( 'title-tag' );
-
+  
   // make custom cv posts CPTs
   function create_cv_entry_cpt() {
     $args = array(
@@ -47,6 +47,9 @@ function custom_portfolio_setup() {
           'singular_name' => __('CV Entry'),
       ),
       'public'      => true,
+      'show_in_rest' => true, // Ensures it's available in REST (important for WPGraphQL)
+      'graphql_single_name' => 'cvEntry', // This makes it accessible as 'cvEntry'
+      'graphql_plural_name' => 'cvEntries', // This makes it accessible as 'cvEntries'
       'has_archive' => false,
       'supports'    => array('title', 'editor'),
       'menu_icon'   => 'dashicons-portfolio',
