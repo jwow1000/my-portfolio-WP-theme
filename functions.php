@@ -48,6 +48,7 @@ function custom_portfolio_setup() {
       ),
       'public'      => true,
       'show_in_rest' => true, // Ensures it's available in REST (important for WPGraphQL)
+      'show_in_graphql' => true,
       'graphql_single_name' => 'cvEntry', // This makes it accessible as 'cvEntry'
       'graphql_plural_name' => 'cvEntries', // This makes it accessible as 'cvEntries'
       'has_archive' => false,
