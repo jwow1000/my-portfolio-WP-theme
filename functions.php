@@ -71,6 +71,14 @@ function custom_portfolio_setup() {
   header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
   header("Access-Control-Allow-Headers: Content-Type, Authorization");
  
+  // Redirect all users to wp-admin
+  function redirect_to_admin() {
+     if (!is_admin()) {
+        wp_redirect(admin_url());
+        exit;
+      }
+  }
+  add_action('template_redirect', 'redirect_to_admin');
 
   // add the script for header animation
   function enqueue_custom_scripts() {
