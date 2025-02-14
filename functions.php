@@ -179,6 +179,9 @@ function custom_portfolio_setup() {
 }
 add_action( 'after_setup_theme', 'custom_portfolio_setup' );
 
+// prevent introspection for security
+add_filter('graphql_enable_introspection', '__return_false');
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
