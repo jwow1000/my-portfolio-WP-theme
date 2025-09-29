@@ -58,6 +58,26 @@ function custom_portfolio_setup() {
     register_post_type('cv_entry', $args);
   }
   add_action('init', 'create_cv_entry_cpt');
+  
+  // cors settings
+  add_action('init', function() {
+    $allowed = [
+        'https://jeremywy.com',
+        'http://localhost:3000', // dev
+    ];
+    if (isset($_SERVER['HTTP_ORIGIN']) && in_array($_SERVER['HTTP_ORIGIN'], $allowed)) {
+        header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");
+        header("Access-Control-Allow-Credentials: true");
+        header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+        header("Access-Control-Allow-Headers: Content-Type, Authorization");
+    }
+
+    if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+        status_header(200);
+        exit;
+    }
+  });
+
 
 
 	/*
